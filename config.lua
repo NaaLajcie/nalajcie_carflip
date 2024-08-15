@@ -1,6 +1,5 @@
 Config = {}
 
-
 Config.General = {
     Target = {
         name = 'flipcar',
@@ -17,7 +16,9 @@ Config.General = {
         inside = 'You are in the vehicle!',
         overturned_vehicle = 'You overturned the vehicle!',
         stopped_flipping = 'You stopped flipping your vehicle!',
-        too_far = 'You are too far away from the vehicle!',
-        no_strength = 'You dont have the strength to tip the vehicle over!',
     }
 }
+
+Config.showNotification = function(message)
+    ESX.Config.showNotification(message)
+end
